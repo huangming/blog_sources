@@ -1,0 +1,15 @@
+<a href="{{ root_url }}/" class="fn-left"><span class="label success">主页</span></a>
+<a href="{{ root_url }}/blog/archives" class="fn-left"><span class="label success">存档</span></a>
+<a href="{{ root_url }}/vimwiki/" class="fn-left"><span class="label success">Wiki</span></a>
+<a href="http://feed.feedsky.com/huangm" target="_blank" title="RSS" class="fn-left" ><span class="label rss"><small>RSS</small></span></a>
+<a href="http://www.feedsky.com/msub_wr.html?burl=huangm" target="_blank" title="通过邮件订阅" class="fn-left"><span class="label rss"><small>+eMail</small></span></a>
+{% if site.simple_search %}
+<div id="search" class="fn-left">
+    <form class="fn-left" action="{{ site.simple_search }}" method="get">
+        <input type="hidden" name="q" value="site:{{ site.url | shorthand_url }}" />
+        <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+    </form>
+</div>
+{% endif %}
+
+

@@ -1,0 +1,10 @@
+{% if site.avatar %}
+<div class="wrapper">
+<section>
+<img src='{{ root_url }}/images/avatar.jpg' height='{{ site.imagesize }}' width='{{ site.imagesize }}'>
+ <ul id="avatar">
+    <li class="loading"><a href="{{ root_url }}/blog/about/" title="点我留言" class="label warning">给我留言</a></li>
+  </ul>
+</section>
+</div>
+{% endif %}

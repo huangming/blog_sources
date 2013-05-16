@@ -1,0 +1,10 @@
+---
+layout: post
+title: "我的vimrc"
+date: 2012-04-25 16:54
+comments: true
+keywords: vim vimrc vim配置
+categories: Vim 
+---
+ 系统：windows7  gvim版本:7.3.154<!--more-->
+{% include_code vimrc.vim %}
