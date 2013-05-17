@@ -31,7 +31,7 @@ comments: true
     </div>
 </div>
 </div>
-{% unless page.sidebar == false %}
+{% if page.sidebar == true %}
 <aside class="sidebar">
   {% if site.page_asides.size %}
     {% include_array page_asides %}
@@ -39,4 +39,4 @@ comments: true
     {% include_array default_asides %}
     {% endif %}
 </aside>
-{% endunless %}
+{% endif %}
